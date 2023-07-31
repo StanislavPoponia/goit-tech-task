@@ -15,7 +15,7 @@ export const Card = styled.div`
   border-radius: 20px;
 `;
 
-export const LogoStyled = styled.img`
+export const LogoStyled = styled.svg`
   width: 76px;
   height: 22px;
   position: absolute;

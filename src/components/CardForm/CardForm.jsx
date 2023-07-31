@@ -1,5 +1,5 @@
 import Picture from '../../assets/back.png';
-import Logo from '../../assets/logo.png';
+import Icon from '../../assets/sprite.svg';
 import { useDispatch } from 'react-redux';
 import { followUser, getUsers } from '../../redux/users/users-operation';
 import PropTypes from 'prop-types';
@@ -19,7 +19,10 @@ function Tweet({ user }) {
   const dispatch = useDispatch();
   return (
     <Card>
-      <LogoStyled src={Logo}/>
+      <LogoStyled width="76px" height="22px">
+        <use href={Icon + "#logo"}></use>
+      </LogoStyled>
+      {/* <LogoStyled src={Icon + "#logo"}/> */}
       <PictureStyled src={Picture} />
       <Line />
       <AvatarWrapper>
