@@ -22,7 +22,6 @@ function Tweet({ user }) {
       <LogoStyled width="76px" height="22px">
         <use href={Icon + "#logo"}></use>
       </LogoStyled>
-      {/* <LogoStyled src={Icon + "#logo"}/> */}
       <PictureStyled src={Picture} />
       <Line />
       <AvatarWrapper>
