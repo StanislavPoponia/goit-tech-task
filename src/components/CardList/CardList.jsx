@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { useState } from 'react';
 import { StyledButton } from './CardList.styled';
 
-function Tweets() {
+function CardList() {
   const [sliceEnd, setSliceEnd] = useState(3);
   const filteredUsers = useSelector(selectFilteredUsers);
   
@@ -33,4 +33,4 @@ function Tweets() {
   );
 }
 
-export default Tweets;
+export default CardList;

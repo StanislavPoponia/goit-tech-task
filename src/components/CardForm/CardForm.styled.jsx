@@ -98,10 +98,5 @@ export const Text = styled.p`
   line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
-
   color: #ebd8ff;
-
-  &:not(:last-child) {
-    margin-bottom: 18px;
-  }
-`;
+  `;

@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  margin: 28px 20px;
 `;
 
 export const StyledName = styled.p`
@@ -17,12 +17,12 @@ export const Tweets = styled(NavLink)`
   font-weight: 700;
   justify-content: center;
   align-items: center;
-  padding: 20px 80px;
-  width: 100px;
+  padding: 15px 60px;
+  width: 70px;
   height: 50px;
   color: #ebd8ff;
   background: #5736a3;
-  border-radius: 10.3108px;
+  border-radius: 12px;
   
   &:hover,
   &:focus {

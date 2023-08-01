@@ -15,7 +15,7 @@ import {
   TextWrapper,
 } from './CardForm.styled';
 
-function Tweet({ user }) {
+function CardForm({ user }) {
   const dispatch = useDispatch();
   return (
     <Card>
@@ -48,7 +48,7 @@ function Tweet({ user }) {
   );
 }
 
-Tweet.propTypes = {
+CardForm.propTypes = {
   user: PropTypes.shape({
     avatar: PropTypes.string.isRequired,
     followers: PropTypes.number.isRequired,
@@ -58,4 +58,4 @@ Tweet.propTypes = {
   }),
 };
 
-export default Tweet;
+export default CardForm;

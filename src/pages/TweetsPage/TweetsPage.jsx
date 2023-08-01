@@ -14,7 +14,7 @@ function TweetsPage() {
 
   return (
     <Div>
-      <Back to="/">Back</Back>
+      <Back to="/">Home</Back>
       <Filter />
       <Tweets />
     </Div>

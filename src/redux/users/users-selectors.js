@@ -1,21 +1,22 @@
 export const selectFilter = state => state.users.filter;
 export const selectUsers = state => state.users.data;
 
-export const selectFilteredUsers = state => {
-  const users = selectUsers(state);
-  const filter = selectFilter(state);
-  const filteredUsers = filter => {
+import { createSelector } from 'reselect';
+
+export const selectFilteredUsers = createSelector(
+  [selectUsers, selectFilter],
+  (users, filter) => {
     switch (filter) {
       case 'Show All':
         return users;
       case 'Follow':
-        return users.filter(user => user.following === false);
+        return users.filter(user => !user.following);
       case 'Following':
-        return users.filter(user => user.following === true);
+        return users.filter(user => user.following);
       default:
         return users;
     }
-  };
+  }
+);
 
-  return filteredUsers(filter);
-};
+export default selectFilteredUsers;

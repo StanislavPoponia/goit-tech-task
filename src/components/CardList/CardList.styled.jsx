@@ -3,9 +3,9 @@ import styled from '@emotion/styled';
 export const StyledButton = styled.button`
   font-weight: 700;
   display: flex;
-  margin: 25px auto;
   justify-content: center;
   align-items: center;
+  margin: 25px auto;
   padding: 15px 30px;
   width: 200px;
   height: 50px;
