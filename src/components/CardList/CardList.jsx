@@ -7,7 +7,10 @@ import { StyledButton } from './CardList.styled';
 function CardList() {
   const [sliceEnd, setSliceEnd] = useState(3);
   const filteredUsers = useSelector(selectFilteredUsers);
-  
+
+  const handleLoadMoreClick = () => {
+    setSliceEnd(prevSliceEnd => prevSliceEnd + 3);
+  };
 
   return (
     <>
@@ -19,13 +22,8 @@ function CardList() {
         ))}
       </ul>
 
-      {filteredUsers.length >= sliceEnd && (
-        <StyledButton
-          type="button"
-          onClick={() => {
-            setSliceEnd(sliceEnd + 3);
-          }}
-        >
+      {filteredUsers.length > sliceEnd && (
+        <StyledButton type="button" onClick={handleLoadMoreClick}>
           Load More
         </StyledButton>
       )}
