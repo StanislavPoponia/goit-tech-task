@@ -1,33 +1,20 @@
-Тестове завдання
-Мета: створити картки твітів та додати інтерактивності при клікові на кнопку.
+Welcome to my repository, where I completed a custom test task from the GoIT company. In which I demonstrated my work skills and the skills I acquired during my studies. This is just the tip of the iceberg and I am ready to dive even deeper into the world of IT. After all, I understand that this is only a small % of what can be learned in this profession. Below you can see the technical task I performed
 
-Критерії виконання
-Верстка фіксована в рх, семантична та валідна.
-Немає помилок в консолі браузера.
-Робота виконана на нативному JS з використанням зборщиків або на React.
-Інтерактивність працює відповідно до технічного завдання.
-Код відформатований та без коментарів.
-В репозиторії має бути описаний README.md.
+Goal: Create tweet cards and add interactivity at the click of a button.
+The layout is fixed in rh, semantic and valid.
+The work is done on native JS using assemblers or on React.
+Interactivity works according to the terms of reference.
 
-Технічне завдання
-Відповідно до макету потрібно реалізувати картки юзера.
-При клікові на кнопку Follow - текст змінюється на Following. Також змінюється колір кнопки. А до кількості фоловерів додається і ваш. Тобто, початкова кількість складає 100,500 фоловерів. При клікові на кнопку буде 100,501.
-При оновлені сторінки має фіксуватись кінцевий результат дій юзера. Тобто, якщо клікнути по кнопці і оновити сторінку - то кнопка все рівно залишається в стані Following із відповідним кольором, а кількість фоловерів НЕ зменшується до початкового значення.
-При повторному клікові на кнопку її текст та колір змінюються до початкового стану. Також змінюється і кількість фоловерів. Вона зменшується на 1 (100,500).
-В коді цифра 100,500 має бути прописана одним значенням (100500). В UI - виведено через кому (100,500).
-Створи свій персональний бекенд для розробки за допомогою UI-сервісу mockapi.io. Створи ресурс users. Використай конструктор ресурсу та опиши об'єкт юзера, як описано нижче.
+Technical task
+According to the layout, you need to implement user cards.
+When you click on the Follow button, the text changes to Following. The color of the button also changes. And yours is added to the number of followers. That is, the initial number is 100,500 followers. When you click on the button, it will be 100,501.
+When the page is updated, the final result of the user's actions should be recorded. That is, if you click on the button and refresh the page, the button remains in the Following state with the appropriate color, and the number of followers does NOT decrease to the initial value.
+Created my own personal backend for development using mockapi.io UI service. Created the users resource. Use the resource constructor and describe the user object as described below.
 
-Юзер
-Створюєте юзера в Mockapi з наступними полями: id, user, tweets, followers, avatar (див скріншот нижче).
-Зображення аватарів мають бути прописані окремими url у властивості “avatar”. Можете підібрати їх самостійно.
-Має бути від 12 юзерів з різними значеннями(на ваш розсуд) в базі. Зроби пагінацію. На одній сторінці пагінації має відображатися від 3 твітів, решта підгружатись при натисканні Load More
-Решта вимог аналогічні до вищеописаного технічного завдання.
+I created a user in Mockapi with the following fields: id, user, tweets, followers, avatar
+Mark up the pages. One pagination page displays 3 tweets, the rest are loaded when you click Load More.
 
-Додаткове завдання
-За виконання вам будуть нараховані додаткові бали! Без виконання додаткового завдання ви не зможете отримати максимальний бал.
-Створи маршрутизацію, використовуючи React Router.
+Additional task
 
-У застосунку повинні бути такі маршрути. Якщо користувач зайшов за неіснуючим маршрутом, його необхідно перенаправляти на домашню сторінку. '/' – компонент Home, домашня сторінка. Стилізація та оформлення на ваш розсуд '/tweets' - компонент tweets, сторінка із відображенням твітів На сторінці tweets має бути кнопка Back, яка веде на головну сторінку.
-
-Завдання із зірочкою
-Додай фільтрацію. Це має бути Dropdown із 3 опціями(оформлення на ваш розсуд): show all, follow, followings show all - показати всі твіти. follow - показати твіти, у яких стан follow. followings - показати твіти, у яких стан following
+1. Created routing using React Router. If the user entered by a non-existent route, he must be redirected to the home page. '/' – Home component, home page. Styling and design at your discretion '/tweets' - component tweets, page with display of tweets The tweets page should have a Back button that leads to the main page.
+2. Added filtering. Dropdown with 3 options: show all, follow, followings show all - show all tweets. follow - show tweets with follow status. followings - show tweets with following status

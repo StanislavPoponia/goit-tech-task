@@ -4,7 +4,7 @@ function HomePage() {
   return (
     <Container>
       <Tweets to="/tweets">Tweets</Tweets>
-      <StyledName>Task Go IT</StyledName>
+      <StyledName>Welcome to GoIT test</StyledName>
     </Container>
   );
 }

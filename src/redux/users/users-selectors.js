@@ -3,7 +3,7 @@ export const selectUsers = state => state.users.data;
 
 import { createSelector } from 'reselect';
 
-export const selectFilteredUsers = createSelector(
+export const selectFilterUsers = createSelector(
   [selectUsers, selectFilter],
   (users, filter) => {
     switch (filter) {
@@ -19,4 +19,4 @@ export const selectFilteredUsers = createSelector(
   }
 );
 
-export default selectFilteredUsers;
+export default selectFilterUsers;

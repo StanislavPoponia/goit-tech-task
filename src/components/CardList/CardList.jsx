@@ -1,12 +1,12 @@
 import Tweet from '../CardForm/CardForm';
-import {selectFilteredUsers} from '../../redux/users/users-selectors';
+import {selectFilterUsers} from '../../redux/users/users-selectors';
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
 import { StyledButton } from './CardList.styled';
 
 function CardList() {
   const [sliceEnd, setSliceEnd] = useState(3);
-  const filteredUsers = useSelector(selectFilteredUsers);
+  const filteredUsers = useSelector(selectFilterUsers);
 
   const handleLoadMoreClick = () => {
     setSliceEnd(prevSliceEnd => prevSliceEnd + 3);
